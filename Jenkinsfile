@@ -1,3 +1,14 @@
+pipeline {
+    agent { label 'rhel87' }
+    stages {
+        stage('build') {
+            steps {
+                sh 'java --version'
+            }
+        }
+    }
+}
+/*
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
 import hudson.model.FreeStyleProject
 import hudson.model.Build.BuildExecution
@@ -14,3 +25,4 @@ items.each{
   }
 }
 items.size()
+*/
