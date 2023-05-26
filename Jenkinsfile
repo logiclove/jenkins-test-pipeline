@@ -4,8 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'java --version'
-            }
-            script {
+                script {
 /*
 import org.jenkinsci.plugins.workflow.job.WorkflowJob
 import hudson.model.FreeStyleProject
@@ -23,6 +22,7 @@ items.each{
   }
 }
 items.size()
+                }
             }
         }
     }
