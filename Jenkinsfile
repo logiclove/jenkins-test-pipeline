@@ -17,7 +17,7 @@ items.each{
   it.builds.each{ 
     if (it.building) {
       println '    "' + it + '"' + " class:" + it.class 
-      it.doKill()
+      //it.doKill()
     }
   }
 }
